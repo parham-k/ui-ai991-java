@@ -28,6 +28,7 @@ public class Agent extends BaseAgent {
             System.out.println("POSITION: (" + agent.position.row + ", " + agent.position.column + ")");
             System.out.println("CARRYING: " + agent.carrying);
             System.out.println("COLLECTED: " + Arrays.toString(agent.collected));
+            System.out.println("SCORE: " + agent.score);
         }
         for (int i = 0; i < gridSize; i++) {
             for (int j = 0; j < gridSize; j++)

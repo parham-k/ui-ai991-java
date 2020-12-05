@@ -49,7 +49,8 @@ public abstract class BaseAgent {
                 for (int j = 0; j < collected.length; j++)
                     collected[j] = Integer.parseInt(info[3].split("")[j]);
             }
-            agentData[i] = new AgentData(name, position, carrying, collected);
+            int score = Integer.parseInt(info[4]);
+            agentData[i] = new AgentData(name, position, carrying, collected, score);
         }
         char[][] map = new char[gridSize][gridSize];
         for (int i = 0; i < gridSize; i++) {
