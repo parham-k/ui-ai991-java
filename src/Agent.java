@@ -29,6 +29,7 @@ public class Agent extends BaseAgent {
             System.out.println("CARRYING: " + agent.carrying);
             System.out.println("COLLECTED: " + Arrays.toString(agent.collected));
             System.out.println("SCORE: " + agent.score);
+            System.out.println("REQUIREMENTS: " + Arrays.toString(agent.countRequired));
         }
         for (int i = 0; i < gridSize; i++) {
             for (int j = 0; j < gridSize; j++)

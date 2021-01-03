@@ -50,7 +50,11 @@ public abstract class BaseAgent {
                     collected[j] = Integer.parseInt(info[3].split("")[j]);
             }
             int score = Integer.parseInt(info[4]);
-            agentData[i] = new AgentData(name, position, carrying, collected, score);
+            String[] reqStr = info[5].split(",");
+            int[] requirements = new int[5];
+            for (int g = 0; g < 5; g++)
+                requirements[g] = Integer.parseInt(reqStr[g]);
+            agentData[i] = new AgentData(name, position, carrying, collected, score, requirements);
         }
         char[][] map = new char[gridSize][gridSize];
         for (int i = 0; i < gridSize; i++) {
